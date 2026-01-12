@@ -16,9 +16,6 @@ header, footer {
 ul.header-links-list a {
     text-decoration: none;
     cursor: pointer;
-    /* padding: 0; */
-    /* margin: 0; */
-    /* border: 2px solid lightblue; */
 }
 
 /* styling */
@@ -46,7 +43,6 @@ button.hero-button, button.cta-button {
 
 
 header {
-    font-size: 48px;
     font-weight: 900;
 
     display: flex;
@@ -58,6 +54,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
 }
 
 ul.header-links-list {
@@ -66,10 +64,12 @@ ul.header-links-list {
     margin: 0;
 
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .hero-section {
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,27 +80,25 @@ ul.header-links-list {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
 .hero-text-section, .hero-image-container {
-    flex-basis: 300px;
-    border: 2px solid red;
+    flex-basis: 450px;
     padding: 10px;
     margin: 10px;
+    flex-shrink: 0;
+}
+
+.hero-main-text {
+    font-size: 40px;
 }
 
 .hero-image {
-    border: 2px solid lightblue;
-
-    flex-shrink: 0;
-    /* height: 230px; */
-    /* width: 500px; */
+    height: 233px;
+    width: 450px;
 }
-
-/* debuggging */
-/* .hero-section, .hero-section > * {
-    border: 2px solid lightblue;
-} */
 
 
 /* starting the content section */
@@ -168,20 +166,17 @@ button.cta-button {
 .quote-section {
     background-color: #E5E7EB;
     color: #1F2937;
-    font-size: 36px;
     font-weight: 300;
-    /* font-family: ; */
     padding: 75px 250px;
 }
 
 .quote {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
+    font-size: 30px;
 }
 
 .quote-container {
-    /* border: 2px solid red; */
-
     display: flex;
     flex-direction: column;
 }
